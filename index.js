@@ -1,6 +1,7 @@
 const closeBtnSideNav = document.querySelector(".side-nav__close-btn");
 const openBtnSideNav = document.querySelector(".side-nav__open-btn");
 const sideNavList = document.querySelector(".side-nav__list");
+const headerHeading = document.querySelector(".header__heading");
 
 const header = document.querySelector("header");
 function toggleInvisible(element) {
@@ -13,6 +14,7 @@ function toggleSideMenuList() {
   toggleInvisible(openBtnSideNav);
   toggleInvisible(closeBtnSideNav);
   toggleInvisible(sideNavList);
+  toggleInvisible(headerHeading)
   header.classList.toggle("sideMenuOpen");/*change background to black using filter */
   sideMenuOpen = !sideMenuOpen;/*check if open so that we close it when we resize to bigger */
 }

@@ -45,6 +45,8 @@ Users should be able to:
 
 ### What I learned
 
+- how to create a header with a background image
+
 ### Continued development
 
 ### Useful resources

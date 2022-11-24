@@ -76,7 +76,7 @@ header::before {
   position: relative;
 }
 
-header .content {
+.headerContent {
   display: flex;
   align-items: center;
   padding-top: 50px;
@@ -84,6 +84,23 @@ header .content {
 
 .header__company-logo {
   margin-right: auto;
+}
+
+.header__heading {
+  border: 2px solid var(--White);
+  color: var(--White);
+  font-size: clamp(1.7rem, 1.0429rem + 3.6964vw, 4rem);
+  padding: 15px;
+  text-transform: uppercase;
+  translate: 0px 8vw;
+  overflow-wrap:anywhere;
+  /* white-space:wrap; */
+  max-width: 650px;
+  letter-spacing: 5px;
+  transition: opacity 250ms 0s ease-out;
+}
+.header__heading.invisible {
+  opacity: 0;
 }
 
 .main-nav__item {
@@ -144,11 +161,11 @@ header .content {
   header::before {
     background-image: url("../images/mobile/image-hero.jpg");
     filter: brightness(1);
-    transition: background-image 250ms 0s ease-out,filter 250ms 0s ease-out;
+    transition: background-image 250ms 0s ease-out, filter 250ms 0s ease-out;
   }
-  
+
   header.sideMenuOpen::before {
-    filter: brightness(0)
+    filter: brightness(0);
   }
 
   .main-nav__list {
