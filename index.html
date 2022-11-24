@@ -19,16 +19,68 @@
 
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="/getAllClasses.js" defer></script>
-    <script src="./index.js" defer></script>
+
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
   <body>
-    <!-- About
-  Careers
-  Events
-  Products
-  Support
+    <header>
+      <div class="content">
+        <img
+          src="./assets/images/logo.svg"
+          class="header__company-logo"
+          alt="company logo"
+        />
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link"> About </a>
+            </li>
+
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link"> Careers </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link"> Events </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link"> Products </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link"> Support </a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="side-nav">
+          <button class="resetBtnStyle side-nav__close-btn invisible">
+            <img src="./assets/images/icon-close.svg" alt="" />
+          </button>
+          <button class="resetBtnStyle side-nav__open-btn">
+            <img src="./assets/images/icon-hamburger.svg" alt="" />
+          </button>
+          <ul class="side-nav__list invisible">
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link"> About </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link"> Careers </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link"> Events </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link"> Products </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link"> Support </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--
+
 
   Immersive experiences that deliver
 
@@ -61,3 +113,6 @@
   © 2021 Loopstudios. All rights reserved. -->
   </body>
 </html>
+
+<script src="/getAllClasses.js" defer></script>
+<script src="./index.js" defer></script>
