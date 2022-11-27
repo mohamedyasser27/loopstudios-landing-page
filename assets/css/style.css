@@ -67,7 +67,7 @@ ul {
   display: none;
 }
 
-main > *,
+main > *:not(footer),
 .intro-card {
   margin-bottom: 100px;
 }
@@ -172,7 +172,6 @@ header .content {
 }
 
 /*intro*/
-
 
 .intro .content {
   display: flex;
@@ -322,6 +321,77 @@ header .content {
   color: var(--Black);
 }
 
+/*footer*/
+footer {
+  background-color: var(--Black);
+  position: relative;
+  bottom: 0px;
+  padding-block: 25px;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__left,
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__left {
+  align-items: flex-start;
+}
+
+.footer__right {
+  align-items: flex-end;
+}
+
+.footer-nav__item,
+.social-media-nav__item {
+  display: inline-block;
+}
+
+.footer-nav__item {
+  margin-right: 35px;
+}
+
+.social-media-nav__item {
+  margin-left: 35px;
+}
+
+.footer-nav__link,
+.social-media-nav__link {
+  color: var(--White);
+  position: relative;
+}
+
+
+
+.social-media-nav__link::after,
+.footer-nav__link::after {
+  content: "";
+  background-color: var(--White);
+  height: 2px;
+  width: 0px;
+  position: absolute;
+  bottom: -7px;
+  left:50%;
+  translate: -50%;
+  transition: width 150ms 0s ease-out;
+}
+.social-media-nav__link:hover::after,
+.footer-nav__link:hover::after {
+  width: 100%;
+}
+
+.footer__copyrights {
+  color: var(--Dark_Gray);
+}
+
 @media only screen and (max-width: 1350px) {
   .intro-card {
     flex-shrink: 0.5;
@@ -339,7 +409,7 @@ header .content {
 }
 
 @media only screen and (max-width: 970px) {
-  main > * {
+  main > *:not(footer) {
     margin-bottom: 50px;
   }
   .intro-card {
@@ -400,7 +470,7 @@ header .content {
   }
 }
 
-@media only screen and (max-width: 656px) {
+@media only screen and (max-width: 658px) {
   .creations .content {
     justify-content: center;
   }
@@ -421,5 +491,29 @@ header .content {
   }
   .see-all-btn {
     order: 3;
+  }
+}
+@media only screen and (max-width: 829px) {
+
+  footer .content{
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .footer__left{
+    align-items: center;
+  }
+
+ .footer-nav__item{
+  display: list-item;
+  margin-right: 0px;
+  text-align: center;
+  margin-bottom: 10px;
+ }
+ .footer__right{
+  align-items: center;
+ }
+  .social-media-nav__item{
+    margin-left: 10px;
   }
 }
