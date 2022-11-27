@@ -33,3 +33,5 @@ const observer = new ResizeObserver((entries) => {
 });
 
 observer.observe(document.body);
+
+console.log("Founded in 2011, Loopstudios has been producing world-class".length);

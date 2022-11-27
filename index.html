@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Varta:wght@300&display=swap"
       rel="stylesheet"
     />
 
@@ -23,91 +23,234 @@
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
   <body>
-    <header>
-      <div class="content">
-        <div class="headerContent">
-          <img
-            src="./assets/images/logo.svg"
-            class="header__company-logo"
-            alt="company logo"
-          />
-          <nav class="main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link"> About </a>
-              </li>
+    <main>
+      <header>
+        <div class="content">
+          <div class="header-upper">
+            <img
+              src="./assets/images/logo.svg"
+              class="header__company-logo"
+              alt="company logo"
+            />
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link"> About </a>
+                </li>
 
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link"> Careers </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link"> Events </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link"> Products </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link"> Support </a>
-              </li>
-            </ul>
-          </nav>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link"> Careers </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link"> Events </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link"> Products </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link"> Support </a>
+                </li>
+              </ul>
+            </nav>
 
-          <nav class="side-nav">
-            <button class="resetBtnStyle side-nav__close-btn invisible">
-              <img src="./assets/images/icon-close.svg" alt="" />
-            </button>
-            <button class="resetBtnStyle side-nav__open-btn">
-              <img src="./assets/images/icon-hamburger.svg" alt="" />
-            </button>
-            <ul class="side-nav__list invisible">
-              <li class="side-nav__item">
-                <a href="#" class="side-nav__link"> About </a>
-              </li>
+            <nav class="side-nav">
+              <button class="resetBtnStyle side-nav__close-btn invisible">
+                <img src="./assets/images/icon-close.svg" alt="" />
+              </button>
+              <button class="resetBtnStyle side-nav__open-btn">
+                <img src="./assets/images/icon-hamburger.svg" alt="" />
+              </button>
+              <ul class="side-nav__list invisible">
+                <li class="side-nav__item">
+                  <a href="#" class="side-nav__link"> About </a>
+                </li>
 
-              <li class="side-nav__item">
-                <a href="#" class="side-nav__link"> Careers </a>
-              </li>
-              <li class="side-nav__item">
-                <a href="#" class="side-nav__link"> Events </a>
-              </li>
-              <li class="side-nav__item">
-                <a href="#" class="side-nav__link"> Products </a>
-              </li>
-              <li class="side-nav__item">
-                <a href="#" class="side-nav__link"> Support </a>
-              </li>
-            </ul>
-          </nav>
+                <li class="side-nav__item">
+                  <a href="#" class="side-nav__link"> Careers </a>
+                </li>
+                <li class="side-nav__item">
+                  <a href="#" class="side-nav__link"> Events </a>
+                </li>
+                <li class="side-nav__item">
+                  <a href="#" class="side-nav__link"> Products </a>
+                </li>
+                <li class="side-nav__item">
+                  <a href="#" class="side-nav__link"> Support </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <p class="header__heading">
+            Immersive<wbr /> experiences<wbr /> that deliver
+          </p>
         </div>
-        <p class="header__heading">
-          Immersive<wbr />
-          experiences<wbr /> that deliver
-        </p>
+      </header>
+
+      <div class="intro">
+        <div class="content">
+          <div class="interactive-image">
+            <img
+              src="./assets/images/desktop/image-interactive.jpg"
+              alt=""
+              class="desktop-img"
+            />
+            <img
+              src="./assets/images/mobile/image-interactive.jpg"
+              alt=""
+              class="mobile-img"
+            />
+          </div>
+          <article class="intro-card">
+            <p class="intro__heading">
+              The leader in <br />
+              interactive VR
+            </p>
+            <p class="intro__description">
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </p>
+          </article>
+        </div>
       </div>
-    </header>
-    <!--
+
+      <section class="creations">
+        <div class="content">
+            <p class="creations-title">our creations</p>
+            <button class="resetBtnStyle see-all-btn">see all</button>
+          <div class="creations-grid">
+            <section class="creation-card">
+              <img
+                class="desktop-card-img"
+                src="./assets/images/desktop/image-deep-earth.jpg"
+                alt=""
+              />
+              <img
+                class="mobile-card-img"
+                src="./assets/images/mobile/image-deep-earth.jpg"
+                alt=""
+              />
+              <p class="creation-card__title">Deep<br />earth</p>
+            </section>
+            <section class="creation-card">
+              <img
+                class="desktop-card-img"
+                src="./assets/images/desktop/image-night-arcade.jpg"
+                alt=""
+              />
+              <img
+                class="mobile-card-img"
+                src="./assets/images/mobile/image-night-arcade.jpg"
+                alt=""
+              />
+              <p class="creation-card__title">Night<br />arcade</p>
+            </section>
+            <section class="creation-card">
+              <img
+                class="desktop-card-img"
+                src="./assets/images/desktop/image-grid.jpg"
+                alt=""
+              />
+
+              <img
+                class="mobile-card-img"
+                src="./assets/images/mobile/image-grid.jpg"
+                alt=""
+              />
+              <p class="creation-card__title">
+                The<br />
+                grid
+              </p>
+            </section>
+            <section class="creation-card">
+              <img
+                class="desktop-card-img"
+                src="./assets/images/desktop/image-soccer-team.jpg"
+                alt=""
+              />
+              <img
+                class="mobile-card-img"
+                src="./assets/images/mobile/image-soccer-team.jpg"
+                alt=""
+              />
+
+              <p class="creation-card__title">Soccer<br />team VR</p>
+            </section>
+            <section class="creation-card">
+              <p class="creation-card__title">
+                From up<br />
+                above VR
+              </p>
+              <img
+                class="desktop-card-img"
+                src="./assets/images/desktop/image-from-above.jpg"
+                alt=""
+              />
+              <img
+                class="mobile-card-img"
+                src="./assets/images/mobile/image-from-above.jpg"
+                alt=""
+              />
+
+            </section>
+            <section class="creation-card">
+              <img
+                class="desktop-card-img"
+                src="./assets/images/desktop/image-pocket-borealis.jpg"
+                alt=""
+              />
+              <img
+                class="mobile-card-img"
+                src="./assets/images/mobile/image-pocket-borealis.jpg"
+                alt=""
+              />
+              <p class="creation-card__title">Pocket<br />borealis</p>
+            </section>
+            <section class="creation-card">
+              <img
+                class="mobile-card-img"
+                src="./assets/images/mobile/image-curiosity.jpg"
+                alt=""
+              />
+              <img
+                class="desktop-card-img"
+                src="./assets/images/desktop/image-curiosity.jpg"
+                alt=""
+              />
+              <p class="creation-card__title">The<br />curiosity</p>
+            </section>
+            <section class="creation-card">
+              <img
+                class="desktop-card-img"
+                src="./assets/images/desktop/image-fisheye.jpg"
+                alt=""
+              />
+              <img
+                class="mobile-card-img"
+                src="./assets/images/mobile/image-fisheye.jpg"
+                alt=""
+              />
+
+              <p class="creation-card__title">
+                Make it<br />
+                fisheye
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!--
 
 
 
-  The leader in interactive VR
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
 
   Our creations
 
   See all
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
+
 
   About
   Careers
@@ -116,6 +259,7 @@
   Support
 
   © 2021 Loopstudios. All rights reserved. -->
+    </main>
   </body>
 </html>
 
